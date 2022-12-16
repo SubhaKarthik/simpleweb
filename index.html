@@ -1,79 +1,45 @@
 <!doctype html>
 <html>
-  <head>
-    <!-- Page setup -->
-    <meta charset="utf-8">
-    <title>Simple website</title>
-    <meta name="description" content="A brief description of your site for search engines">
-    <meta name="SK" content="Simple html template">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link rel="icon" type="image/png" href="favicon.png">
+
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   
-    <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-   
-    <!-- Custom styles -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
-
-    <!-- Want to add Bootstrap? -->
-    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+</head>
+<script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+ <!-- add this script in order to load a large set of 3D model extensions-->
+ <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     
-  </head>
-  
-  <body>
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene vr-mode-ui="enabled:false;" renderer="logarithmicDepthBuffer:true;" embedded
+    arjs="trackingMethod:best; sourceType: webcam; debugUIEnabled: false;">
+    <!-- <a-entity id="box1" 
+            geometry="primitive: box"
+            material="color: #ff9999; shader: flat"
+            position="0 0.15 -5"
+            rotation="0 45 0"
+        >
+        </a-entity>  -->
 
-    <header id="header">
-      <img src="logo.jpg">
-      <h1>Simple Website</h1>
-      
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-      <ul class="main-menu">
-        <li><a href="#home">home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>                 
-    </header>
-   
-    <div id="container">
-      <div class="inner">
-        <div id="content"> 
-          
-          <div id="home" class="content-region hide">
-            <h2>Home</h2>
-            <p>
-              This is a simple website template published with Github Pages. <a href="https://github.com/cpl-makerlab/simple-website-template">Fork this repository</a> to create your own site!
-            </p>
-          </div>
-          
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
-            <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
-            </p>
-          </div>
-          
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>
-              Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor. 
-            </p>
-          </div>
-          
-        </div>
-      </div>
-    </div>
+    <!-- <a-assets>
+          <a-asset-item id="couple" src="scene.gltf"></a-asset-item>
+        </a-assets> -->
 
-    <footer>  
-      Footer region
-    </footer>
-    
-    <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
-    
-  </body>
+    <!-- <a-entity gltf-model="./assets/scene.gltf" 
+          scale="5 5 5"
+          position="0 0.15 -2"
+        ></a-entity> -->
+
+    <a-marker id="marker" markerhandler emitevents="true" preset="hiro" smooth="true" smoothCount="10"
+      smoothTolerance=".01" smoothThreshold="5">
+      <a-entity gltf-model="./assets/scene.gltf" scale="12 12 12" position="0 0 0"></a-entity>
+    </a-marker>
+
+    <a-entity camera>
+
+    </a-entity>
+
+  </a-scene>
+</body>
+
 </html>
