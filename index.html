@@ -5,13 +5,22 @@
   </head>
   <body>
     <a-scene>
-        <a-entity id="box1" 
+        <!-- <a-entity id="box1" 
             geometry="primitive: box"
             material="color: #ff9999; shader: flat"
             position="0 0.15 -5"
             rotation="0 45 0"
         >
-        </a-entity>      
+        </a-entity>  -->
+        
+        <!-- <a-assets>
+          <a-asset-item id="couple" src="scene.gltf"></a-asset-item>
+        </a-assets> -->
+      
+        <a-entity gltf-model="./assets/scene.gltf" 
+          scale="8 8 8"
+          position="0 0.15 -6"
+        ></a-entity>
     </a-scene>
   </body>
 </html>
