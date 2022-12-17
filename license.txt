@@ -1,11 +1,11 @@
 Model Information:
-* title:	Christmas Ball
-* source:	https://sketchfab.com/3d-models/christmas-ball-36868988285f4b60b3e389e1aa1bab3f
-* author:	Ivanix88 (https://sketchfab.com/Ivanix88)
+* title:	santa claus dancing, modern santa, new year 2021
+* source:	https://sketchfab.com/3d-models/santa-claus-dancing-modern-santa-new-year-2021-86a017a23f514dfeaa1e8259cddb349e
+* author:	NataLya (https://sketchfab.com/martalernata)
 
 Model License:
-* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
-* requirements:	Author must be credited. Commercial use is allowed.
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Christmas Ball" (https://sketchfab.com/3d-models/christmas-ball-36868988285f4b60b3e389e1aa1bab3f) by Ivanix88 (https://sketchfab.com/Ivanix88) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "santa claus dancing, modern santa, new year 2021" (https://sketchfab.com/3d-models/santa-claus-dancing-modern-santa-new-year-2021-86a017a23f514dfeaa1e8259cddb349e) by NataLya (https://sketchfab.com/martalernata) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
