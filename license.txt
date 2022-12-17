@@ -1,11 +1,11 @@
 Model Information:
-* title:	Simple Christmas Tree
-* source:	https://sketchfab.com/3d-models/simple-christmas-tree-7ba9f879b3ab41f6a5fb6c1c7728859a
-* author:	Paris Mutter (https://sketchfab.com/octrpus)
+* title:	Stylised Christmas tree
+* source:	https://sketchfab.com/3d-models/stylised-christmas-tree-6b973796c0774c559c41b07d99ee26b6
+* author:	MaksArt (https://sketchfab.com/MaksArt)
 
 Model License:
-* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
-* requirements:	Author must be credited. Commercial use is allowed.
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Simple Christmas Tree" (https://sketchfab.com/3d-models/simple-christmas-tree-7ba9f879b3ab41f6a5fb6c1c7728859a) by Paris Mutter (https://sketchfab.com/octrpus) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Stylised Christmas tree" (https://sketchfab.com/3d-models/stylised-christmas-tree-6b973796c0774c559c41b07d99ee26b6) by MaksArt (https://sketchfab.com/MaksArt) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
