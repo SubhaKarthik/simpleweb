@@ -1,29 +1,34 @@
-// Wait for the document to load before running the script 
-(function ($) {
+AFRAME.registerComponent('audio', {
+    schema: {
+      src: { type: 'audio' },
+      loop: { type: 'boolean' },
+      volume: { type: 'int', default: 1 },
+      distance: { type: 'int', default: 8 },
+      fade: { type: 'int', default: 5000 },
+    },
   
-  // We use some Javascript and the URL #fragment to hide/show different parts of the page
-  // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Linking_to_an_element_on_the_same_page
-  $(window).on('load hashchange', function(){
-    
-    // First hide all content regions, then show the content-region specified in the URL hash 
-    // (or if no hash URL is found, default to first menu item)
-    $('.content-region').hide();
-    
-    // Remove any active classes on the main-menu
-    $('.main-menu a').removeClass('active');
-    var region = location.hash.toString() || $('.main-menu a:first').attr('href');
-    
-    // Now show the region specified in the URL hash
-    $(region).show();
-    
-    // Highlight the menu link associated with this region by adding the .active CSS class
-    $('.main-menu a[href="'+ region +'"]').addClass('active'); 
-
-    // Alternate method: Use AJAX to load the contents of an external file into a div based on URL fragment
-    // This will extract the region name from URL hash, and then load [region].html into the main #content div
-    // var region = location.hash.toString() || '#first';
-    // $('#content').load(region.slice(1) + '.html')
-    
+    init: function() {
+      this.sound = new Howl({
+        src: [ this.data.src ],
+        loop: this.data.loop,
+        volume: this.data.volume
+      });
+  
+      this.camera = document.getElementById('rig');
+    },
+  
+    tick: function() {
+      const objPos = this.el.object3D.position;
+      const camPos = this.camera.object3D.position;
+      const distance = objPos.distanceTo(camPos);
+  
+      if (!this.audioId && distance < this.data.distance) {
+        this.audioId = this.sound.play();
+        this.sound.fade(0, 1, this.data.fade, this.audioId);
+      }
+      else if (this.audioId && distance >= this.data.distance) {
+        this.sound.fade(1, 0, this.data.fade, this.audioId);
+        this.audioId = null;
+      }
+    }
   });
-  
-})(jQuery);
