@@ -6,6 +6,9 @@
     <title>WebAR: Preset Marker</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@^5.1.2/dist/aframe-animation-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.11/dist/aframe-particle-system-component.min.js"></script>
+    
     <!-- <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
     <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script> -->
   </head>
@@ -35,6 +38,7 @@
 	      <a-entity gltf-model="./scene.gltf" 
 	          scale="12 12 12"
 	          position="0 0 0"
+		  animation="property:rotation; easing:linear; dur:60000; to:0 360 0; loop:true;"	
 	        >
 	      </a-entity>
 	      </a-marker-camera>
