@@ -1,11 +1,11 @@
 Model Information:
-* title:	Presents
-* source:	https://sketchfab.com/3d-models/presents-e291611cd3484a6c99d385855c595f56
-* author:	cranberrymk (https://sketchfab.com/cranberrymk)
+* title:	Simple Christmas Tree
+* source:	https://sketchfab.com/3d-models/simple-christmas-tree-7ba9f879b3ab41f6a5fb6c1c7728859a
+* author:	Paris Mutter (https://sketchfab.com/octrpus)
 
 Model License:
 * license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 * requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Presents" (https://sketchfab.com/3d-models/presents-e291611cd3484a6c99d385855c595f56) by cranberrymk (https://sketchfab.com/cranberrymk) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Simple Christmas Tree" (https://sketchfab.com/3d-models/simple-christmas-tree-7ba9f879b3ab41f6a5fb6c1c7728859a) by Paris Mutter (https://sketchfab.com/octrpus) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
