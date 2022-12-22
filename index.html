@@ -13,15 +13,16 @@
 </head>
 
 <body style="margin : 0px; overflow: hidden;">
-  <a-scene vr-mode-ui="enabled: false;" embedded arjs="sourceType: webcam;" arjs="debugUIEnabled: false;">
-    <a-entity text="value: Point your camera to the 'Vaalthu' text in the greeting card.;"></a-entity>
+  <a-scene vr-mode-ui="enabled: false;" embedded arjs="sourceType: webcam;" arjs="debugUIEnabled: false;">    
     <!--<a-text value="Point your camera to the 'Vaalthu' text in the greeting card." geometry="primitive:plane"></a-text>-->
     <a-sound src="./PositiveWinterSanta.mp3" autoplay="true" loop="true" position="0 2 5"></a-sound>
     <a-marker-camera markerhandler emitevents="true" smooth="true" smoothCount="10" smoothTolerance=".01"
       smoothThreshold="5" type="pattern" url="./pattern-VaalthuMarker.patt">
       <a-entity gltf-model="./scene.gltf" scale="1 1 1" position="0 0 0">
       </a-entity>
-      <a-entity size="1" particle-system="preset: snow; particleCount: 5000"></a-entity>
+      <a-entity size="1" particle-system="preset: snow; particleCount: 5000">
+        <a-entity text="value: Point your camera to the 'Vaalthu' text in the greeting card.;"></a-entity>
+      </a-entity>      
     </a-marker-camera>
     <a-entity id="rig" movement-controls>
       <a-entity camera look-controls="pointerLockEnabled: true"></a-entity>
