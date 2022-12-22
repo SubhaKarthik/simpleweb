@@ -6,7 +6,7 @@
   <title>WebAR: Preset Marker</title>
   <script src="./aframe.min.js"></script>
   <script src="./aframe-ar.js"></script>
-  <script src="./aframe-animation-component.min.js"></script>
+  <!--<script src="./aframe-animation-component.min.js"></script>-->
   <!--<script src="./aframe-particle-system-component.min.js"></script>-->
   <!--<script src="./howler.min.js"></script> -->
   <!--<script src="./script.js"></script> -->
@@ -17,8 +17,7 @@
     <a-sound src="./PositiveWinterSanta.mp3" autoplay="true" loop="true" position="0 2 5"></a-sound>
     <a-marker-camera markerhandler emitevents="true" smooth="true" smoothCount="10" smoothTolerance=".01"
       smoothThreshold="5" type="pattern" url="./pattern-VaalthuMarker.patt">
-      <a-entity gltf-model="./scene.gltf" scale="1 1 1" position="0 0 0"
-        animation="property:rotation; easing:linear; dur:60000; to:0 360 0; loop:true;">
+      <a-entity gltf-model="./scene.gltf" scale="1 1 1" position="0 0 0">
       </a-entity>
       <!--<a-entity size="1" particle-system="preset: snow; particleCount: 5000"></a-entity>-->
     </a-marker-camera>
