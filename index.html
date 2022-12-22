@@ -35,14 +35,13 @@ if (!doNotTrack) {
 </head>
 
 <body style="margin : 0px; overflow: hidden;">
-  <a-scene vr-mode-ui="enabled: false;" embedded arjs="sourceType: webcam;" arjs="debugUIEnabled: false;" text="value:'Point your camera to the Vaalthu text in the greeting card.';">    
-    <!--<a-text value="Point your camera to the 'Vaalthu' text in the greeting card." geometry="primitive:plane"></a-text>-->
+  <a-scene vr-mode-ui="enabled: false;" embedded arjs="sourceType: webcam;" arjs="debugUIEnabled: false;">    
     <a-sound src="./PositiveWinterSanta.mp3" autoplay="true" loop="true" position="0 2 5"></a-sound>
     <a-marker-camera markerhandler emitevents="true" smooth="true" smoothCount="10" smoothTolerance=".01"
       smoothThreshold="5" type="pattern" url="./pattern-VaalthuMarker.patt">
       <a-entity gltf-model="./scene.gltf" scale="1 1 1" position="0 0 0">
       </a-entity>
-      <a-entity size="1" position="0 2.25 -15" particle-system="preset: snow; particleCount: 1000">
+      <a-entity size="3" position="0 2.25 -15" particle-system="preset: snow; particleCount: 1000">
       </a-entity>      
     </a-marker-camera>
     <a-entity id="rig" movement-controls>
